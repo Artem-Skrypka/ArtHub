@@ -15,9 +15,9 @@
 
     </head>
     <body class="antialiased pt-[70px]">
-        <header class="fixed bg-white flex top-0 border-b border-pink-800 h-[70px] w-full">
+        <header class="fixed z-30 bg-white flex top-0 border-b border-pink-800 h-[70px] w-full">
             <div class="container mx-auto">
-                <div class="grid grid-cols-3 grid-rows-1 h-full">
+                <div class="grid grid-cols-3 lg:grid-cols-[1fr_3fr_1fr] grid-rows-1 h-full">
                     <div class="flex h-full items-center w-full px-2">
 
                     </div>
@@ -32,24 +32,30 @@
                         </ul>
                     </div>
 
-                    <div class="flex h-full items-center w-full px-2">
-                        <ul class="flex w-full justify-center">
-                            <li class=" mx-1 first:ml-0 last:mr-0"><a class=" text-pink-800 hover:text-pink-800 active:text-pink-800" href="">Home</a></li>
-                            <li class=" mx-1 first:ml-0 last:mr-0"><a href="" class="hover:text-pink-800 active:text-pink-800">Creators</a></li>
-                            <li class=" mx-1 first:ml-0 last:mr-0"><a href="" class="hover:text-pink-800 active:text-pink-800">Something</a></li>
-                            <li class=" mx-1 first:ml-0 last:mr-0"><a href="" class="hover:text-pink-800 active:text-pink-800">Else</a></li>
-                            <li class=" mx-1 first:ml-0 last:mr-0"><a href="" class="hover:text-pink-800 active:text-pink-800">Maybe</a></li>
-                        </ul>
+                    <div class="flex relative z-30 h-full items-center justify-end w-full px-2">
+                        <div class="flex w-max user-dropdown hover:cursor-pointer">
+                            <span>iNSaNiTY</span>
+                            <i class="fa-solid fa-chevron-up origin-center text-pink-800   transition-all user-arrow w-[15px] h-[15px] mt-[4px] ml-[4px]"></i>
+                            <div class="user-dropdown-menu hidden absolute z-30 top-[40px] pt-[30px] mx-2 right-0 flex-col w-full h-max">
+                                <ul class="relative z-30 bg-white border border-t-0 border-pink-800">
+                                    <li><a href="">List</a></li>
+                                    <li><a href="">List</a></li>
+                                    <li><a href="">List</a></li>
+                                    <li><a href="">List</a></li>
+                                    <li><a href="">List</a></li>
+                                </ul>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
         </header>
         <div class="container mx-auto">
             <div class="grid lg:grid-cols-[1fr_3fr_1fr] grid-rows-1 grid-cols-[minmax(120px,_1fr)_2fr]">
-                <div class="w-full p-2 sticky top-[70px] h-max">
+                <div class="w-full p-2 sticky z-40 top-[70px] h-max">
                     <div class="flex w-full flex-col items-center justify-between min-[1px]:text-sm md:text-base">
-                        <div class="w-20 relative h-20 z-20 rounded-full">
-                            <div class=" absolute top-[-105%] left-2 z-20 flex items-center w-[60px] h-full">
+                        <div class="w-20 relative h-20 rounded-full">
+                            <div class=" absolute top-[-105%] left-2 flex items-center w-[60px] h-full">
                                     <img class="w-[60px] h-[60px]" src="{{ asset('images/logo.png') }}" alt="">
                             </div>
                             <img class="h-full w-full border-2 border-pink-500" src="{{ asset('images/urahara.jpg') }}" alt="avatar">
@@ -92,5 +98,6 @@
                 </div>
             </div>
         </div>
+        <script src="{{ asset('js/dropdown.js') }}"></script>
     </body>
 </html>
