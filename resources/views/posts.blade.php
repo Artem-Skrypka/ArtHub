@@ -35,14 +35,12 @@
                     <div class="min-[1px]:max-sm:flex sm:hidden h-full items-center justify-center   w-full px-2">
                         <div class="burger-menu min-[1px]:max-sm:flex sm:hidden flex-col justify-between cursor-pointer w-[20px] h-[13px]">
                             {{-- <span class=" w-full h-[2px] bg-pink-800 before:flex before:content-[''] before:mt-[5px] before:h-[2px] before:w-full before:bg-pink-800 before:transition-all after:content-[''] after:mt-[3px] after:h-[2px] after:w-full after:bg-pink-800 after:flex after:transition-all transition-all"></span> --}}
-                            <span class=" w-full flex h-[2px] bg-pink-800 transition-all rounded-lg"></span>
-                            <span class=" w-full flex h-[2px] bg-pink-800 transition-all rounded-lg"></span>
-                            <span class=" w-full flex h-[2px] bg-pink-800 transition-all rounded-lg"></span>
+                            <span class="burger-span w-full flex h-[2px] bg-pink-800 transition-all rounded-lg"></span>
+                            <span class="burger-span w-full flex h-[2px] bg-pink-800 transition-all rounded-lg"></span>
+                            <span class="burger-span w-full h-[2px] bg-pink-800 transition-all rounded-lg"></span>
                         </div>
                     </div>
-
                     
-
                     <div class="flex relative z-30 h-full items-center justify-end min-[1px]:max-sm:justify-center lg:justify-center w-full px-2">
                         <div class="flex sm:max-lg:relative w-max user-dropdown hover:cursor-pointer">
                             <span class="text-darkblue">iNSaNiTY</span>
@@ -62,6 +60,19 @@
             </div>
         </header>
         <div class="container mx-auto">
+
+            <div class="relative z-50 transition-allz">
+                <div class=" fixed sm:hidden flex flex-col w-full h-full justify-start bg-white">
+                    <ul>
+                        <li><a class="inline-flex w-full h-10 hover:bg-pink-100 justify-center items-center border-b border-pink-800 font-normal" href="">Home</a></li>
+                        <li><a class="inline-flex w-full h-10 hover:bg-pink-100 justify-center items-center border-b border-pink-800 font-normal" href="">Creators</a></li>
+                        <li><a class="inline-flex w-full h-10 hover:bg-pink-100 justify-center items-center border-b border-pink-800 font-normal" href="">Something</a></li>
+                        <li><a class="inline-flex w-full h-10 hover:bg-pink-100 justify-center items-center border-b border-pink-800 font-normal" href="">Home</a></li>
+                        <li><a class="inline-flex w-full h-10 hover:bg-pink-100 justify-center items-center border-b border-pink-800 font-normal" href="">Home</a></li>
+                    </ul>
+                </div>
+            </div>
+
             <div class="grid lg:grid-cols-[1fr_3fr_1fr] grid-rows-1 grid-cols-[minmax(120px,_1fr)_2fr]">
                 <div class="w-full p-2 sticky z-40 top-[70px] h-max">
                     <div class="flex w-full flex-col items-center justify-between min-[1px]:text-sm md:text-base">
