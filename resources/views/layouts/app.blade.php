@@ -6,6 +6,7 @@
         <meta name="csrf-token" content="{{ csrf_token() }}">
 
         <title>{{ config('app.name', 'ArtHub') }}</title>
+        <link rel="icon" type="image/x-icon" href="{{ asset('images/favicon.ico') }}">
 
         <!-- Fonts -->
         

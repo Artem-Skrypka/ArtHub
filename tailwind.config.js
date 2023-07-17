@@ -17,6 +17,7 @@ export default {
             },
             colors: {
                 'darkblue': '#0D1B2A',
+                'post': '#fdf7f79c',
             },
         },
     },
