@@ -12,6 +12,7 @@ const user_dropdown = document.getElementsByClassName("user-dropdown")[0];
 const user_arrow = document.getElementsByClassName("user-arrow")[0];
 const user_dropdown_menu = document.getElementsByClassName("user-dropdown-menu")[0];
 const burger_menu = document.getElementsByClassName("burger-menu")[0];
+const mobile_nav = document.getElementsByClassName("mobile-nav")[0];
 document.getElementsByClassName("burger-menu")[0];
 
 if (isMobile.any()) {
@@ -25,6 +26,8 @@ if (isMobile.any()) {
         document.getElementsByClassName("burger-span")[0].classList.toggle('-rotate-45');
         document.getElementsByClassName("burger-span")[2].classList.toggle('-translate-y-[10px]');
         document.getElementsByClassName("burger-span")[2].classList.toggle('rotate-45');
+        mobile_nav.classList.toggle("hidden");
+        body.classList.toggle('overflow-hidden');
     })
 
     

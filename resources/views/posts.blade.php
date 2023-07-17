@@ -14,7 +14,7 @@
         <link href="https://fonts.googleapis.com/css2?family=Ysabeau+Infant:ital,wght@0,1;0,100;0,200;0,300;0,400;0,500;0,600;0,        700;0,800;0,900;0,1000;1,1;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900;1,1000&display=swap" rel="stylesheet">
 
     </head>
-    <body class="antialiased pt-[70px]">
+    <body class="antialiased pt-[70px] sm:overflow-auto">
         <header class="fixed z-30 bg-white flex top-0 border-b border-pink-800 h-[70px] w-full">
             <div class="container mx-auto">
                 <div class="grid grid-cols-[2fr_3fr_1fr] min-[1px]:max-sm:grid-cols-3 lg:grid-cols-[1fr_3fr_1fr] grid-rows-1 h-full">
@@ -35,9 +35,9 @@
                     <div class="min-[1px]:max-sm:flex sm:hidden h-full items-center justify-center   w-full px-2">
                         <div class="burger-menu min-[1px]:max-sm:flex sm:hidden flex-col justify-between cursor-pointer w-[20px] h-[13px]">
                             {{-- <span class=" w-full h-[2px] bg-pink-800 before:flex before:content-[''] before:mt-[5px] before:h-[2px] before:w-full before:bg-pink-800 before:transition-all after:content-[''] after:mt-[3px] after:h-[2px] after:w-full after:bg-pink-800 after:flex after:transition-all transition-all"></span> --}}
-                            <span class="burger-span w-full flex h-[2px] bg-pink-800 transition-all rounded-lg"></span>
-                            <span class="burger-span w-full flex h-[2px] bg-pink-800 transition-all rounded-lg"></span>
-                            <span class="burger-span w-full h-[2px] bg-pink-800 transition-all rounded-lg"></span>
+                            <span class="burger-span w-full flex h-[2px] bg-pink-800 transition-all  rounded-lg"></span>
+                            <span class="burger-span w-full h-[2px] flex bg-pink-800 transition-all rounded-lg"></span>
+                            <span class="burger-span w-full h-[2px] bg-pink-800 transition-all  rounded-lg"></span>
                         </div>
                     </div>
                     
@@ -62,7 +62,7 @@
         <div class="container mx-auto">
 
             <div class="relative z-50 transition-allz">
-                <div class=" fixed sm:hidden flex flex-col w-full h-full justify-start bg-white">
+                <div class=" mobile-nav fixed sm:hidden hidden flex-col w-full h-full justify-start bg-white">
                     <ul>
                         <li><a class="inline-flex w-full h-10 hover:bg-pink-100 justify-center items-center border-b border-pink-800 font-normal" href="">Home</a></li>
                         <li><a class="inline-flex w-full h-10 hover:bg-pink-100 justify-center items-center border-b border-pink-800 font-normal" href="">Creators</a></li>
