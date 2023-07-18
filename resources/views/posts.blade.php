@@ -12,7 +12,7 @@
         <script src="https://kit.fontawesome.com/e2ee2d8c5c.js" crossorigin="anonymous"></script>
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Ysabeau+Infant:ital,wght@0,1;0,100;0,200;0,300;0,400;0,500;0,600;0,        700;0,800;0,900;0,1000;1,1;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900;1,1000&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Ysabeau+Infant:ital,wght@0,1;0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;0,1000;1,1;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900;1,1000&display=swap" rel="stylesheet">
 
     </head>
     <body class="antialiased pt-[70px] sm:overflow-auto">
@@ -95,13 +95,17 @@
  </a>                           <a class="md:m-2 m-1" href=""><i class="fa-brands text-amber-600 fa-instagram md:fa-lg"></i></a>
                         </div>
                     </div>
-                    <div class="w-full my-2 lg:hidden min-[1px]:text-xs md:text-base h-max">
+                    <div class="w-full my-2 lg:hidden min-[1px]:text-xs md:text-base h-max max-h-[500px] overflow-y-auto">
                         <div class="flex flex-col rounded-t-md">
                             <div class="flex flex-col border rounded-t-md border-pink-800 min-[1px]:text-center md:text-left">
                                 <h2 class=" text-center border-b border-pink-800 text-darkblue" >Subscribtion levels</h2>
                                 <x-subscription></x-subscription>
                                 <x-subscription></x-subscription>
                                 <x-subscription></x-subscription>
+                                <x-subscription></x-subscription>
+                                <x-subscription></x-subscription>
+                                <x-subscription></x-subscription>
+                                
                             </div>
                         </div>
                     </div>
@@ -111,13 +115,15 @@
                     <x-post-card></x-post-card>
                     <x-post-card></x-post-card>
                 </div>
-                <div class="w-full p-2 sticky min-[320px]:hidden lg:flex top-[70px] h-max">
+                <div class=" post-wrapper-desktop w-full p-2 sticky min-[320px]:hidden lg:flex top-[70px] h-max max-h-[calc(100vh-80px)] overflow-y-auto">
                     <div class="flex flex-col rounded-t-md">
                         <div class="flex flex-col border rounded-t-md border-pink-800 min-[1px]:text-center md:text-left">
                             <h2 class=" text-center text-darkblue border-b border-pink-800">Subscribtion levels</h2>
                             <x-subscription></x-subscription>
                             <x-subscription></x-subscription>
                             <x-subscription></x-subscription>
+                            <x-subscription></x-subscription>
+
                         </div>
                     </div>
                 </div>

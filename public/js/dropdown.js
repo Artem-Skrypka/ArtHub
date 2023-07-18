@@ -13,6 +13,8 @@ const user_arrow = document.getElementsByClassName("user-arrow")[0];
 const user_dropdown_menu = document.getElementsByClassName("user-dropdown-menu")[0];
 const burger_menu = document.getElementsByClassName("burger-menu")[0];
 const mobile_nav = document.getElementsByClassName("mobile-nav")[0];
+const post_wrapper_desktop = document.getElementsByClassName("post-wrapper-desktop")[0];
+
 document.getElementsByClassName("burger-menu")[0];
 
 if (isMobile.any()) {
@@ -44,3 +46,10 @@ if (isMobile.any()) {
         user_dropdown_menu.classList.add("hidden");
     });
 }
+
+// if (document.getElementsByClassName("subscribe").length > 10) {
+//     post_wrapper_desktop.classList.toggle("sticky");
+//     post_wrapper_desktop.classList.toggle("overflow-y-auto");
+// }
+
+console.log(document.getElementsByClassName("subscribe").length);
