@@ -16,7 +16,7 @@
 
     </head>
     <body class="antialiased pt-[70px] sm:overflow-auto">
-        <header class="fixed z-30 bg-white flex top-0 border-b border-pink-800 h-[70px] w-full">
+        <header class="fixed z-[80] bg-white flex top-0 border-b border-pink-800 h-[70px] w-full">
             <div class="container mx-auto">
                 <div class="grid grid-cols-[2fr_3fr_1fr] min-[1px]:max-sm:grid-cols-3 lg:grid-cols-[1fr_3fr_1fr] grid-rows-1 h-full">
                     <div class="flex h-full items-center w-full px-2">
@@ -46,7 +46,7 @@
                         <div class="flex sm:max-lg:relative w-max user-dropdown hover:cursor-pointer">
                             <span class="text-darkblue">iNSaNiTY</span>
                             <i class="fa-solid fa-chevron-up origin-center text-pink-800   transition-all user-arrow w-[15px] h-[15px] mt-[4px] ml-[4px]"></i>
-                            <div class="user-dropdown-menu hidden absolute z-30 top-[40px] sm:max-lg:top-[17px] pt-[30px] mx-2 right-0 flex-col sm:max-lg:w-full w-[calc(100%-1rem)] lg:max-xl:w-[calc(98.5%-1rem)] h-max">
+                            <div class="user-dropdown-menu hidden absolute top-[40px] sm:max-lg:top-[17px] pt-[30px] mx-2 right-0 flex-col sm:max-lg:w-full w-[calc(100%-1rem)] lg:max-xl:w-[calc(98.5%-1rem)] h-max">
                                 <ul class="relative z-30 bg-white border border-t-0 border-pink-800">
                                     <li><a class=" inline-flex text-center justify-center items-center hover:bg-pink-100 w-full text-darkblue" href="#">Profile</a></li>
                                     <li><a class=" inline-flex text-center justify-center items-center hover:bg-pink-100 w-full text-darkblue" href="">List</a></li>
@@ -75,7 +75,7 @@
             </div>
 
             <div class="grid lg:grid-cols-[1fr_3fr_1fr] grid-rows-1 grid-cols-[minmax(120px,_1fr)_2fr]">
-                <div class="w-full p-2 sticky z-40 top-[70px] h-max">
+                <div class="w-full p-2 sticky z-[80] top-[70px] h-max">
                     <div class="flex w-full flex-col items-center justify-between min-[1px]:text-sm md:text-base">
                         <div class="w-20 relative h-20 rounded-full">
                             <div class=" absolute top-[-105%] left-2 flex items-center w-[60px] h-full">
@@ -95,7 +95,7 @@
  </a>                           <a class="md:m-2 m-1" href=""><i class="fa-brands text-amber-600 fa-instagram md:fa-lg"></i></a>
                         </div>
                     </div>
-                    <div class="w-full my-2 lg:hidden min-[1px]:text-xs md:text-base h-max max-h-[500px] overflow-y-auto">
+                    <div class="w-full my-2 lg:hidden min-[1px]:text-xs md:text-base h-[300px] overflow-y-auto">
                         <div class="flex flex-col rounded-t-md">
                             <div class="flex flex-col border rounded-t-md border-pink-800 min-[1px]:text-center md:text-left">
                                 <h2 class=" text-center border-b border-pink-800 text-darkblue" >Subscribtion levels</h2>
@@ -110,7 +110,29 @@
                         </div>
                     </div>
                 </div>
-                <div class="w-full p-2">
+                <div class="w-full p-2 relative">
+                    <div class="min-[1px]:text-xs max-[450px]:text-xs z-[70] mx-auto h-[40px] -mt-2 w-[90%] sticky top-[70px] border-t-0 rounded-t-none bg-white md:text-base flex mb-3 rounded-md border border-pink-800">
+                        <form class="h-full w-full flex items-center relative" action="">
+                            @method('POST')
+                            @csrf
+                            <input class="h-[95%] w-[90%] ml-[1px] focus:outline-none border-none focus:ring-0 active:outline-none visited:outline-none text-pink-800" placeholder="Search..." type="search">
+                            <div class="flex justify-end items-center w-[10%] h-full">
+                                <a class="mx-2" href="#">
+                                    <i class="fa-solid fa-magnifying-glass fa-lg text-pink-800"></i>
+                                </a>
+                                <a class="mx-2" href="#">
+                                    <i class="fa-solid fa-list-check fa-lg text-pink-800"></i>
+                                </a>
+                            </div>
+
+                            <div class="hidden items-center flex-wrap p-2 absolute w-[calc(100%+2px)] h-max max-h-[150px] overflow-auto -left-[1px] top-[35px] bg-white border rounded-b-md border-pink-800">
+                                <div class="flex justify-center items-center">
+                                    <label class="mr-1" for="anime">Anime</label>
+                                    <input class="mr-2" name="anime" type="checkbox">
+                                </div>
+                            </div>
+                        </form>
+                    </div>
                     <x-post-card></x-post-card>
                     <x-post-card></x-post-card>
                     <x-post-card></x-post-card>

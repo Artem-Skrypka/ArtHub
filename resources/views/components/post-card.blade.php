@@ -19,7 +19,7 @@
             <p class="p-1">Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident nesciunt voluptates laboriosam eligendi et unde repellendus fugit ex ut consectetur, pariatur quis libero excepturi voluptatibus quaerat expedita dolore explicabo facere iusto, earum soluta molestiae eveniet harum. Modi debitis eum provident illum laboriosam aspernatur, architecto placeat temporibus quibusdam natus repudiandae quaerat voluptatibus, eius perspiciatis quos voluptatum ut quas quod voluptas veritatis iste rerum quia? Molestias, cumque distinctio. Nobis sunt odit doloremque eligendi sed, nemo dolores ipsa magni totam laboriosam consequuntur dolor culpa quasi vel odio at molestiae quidem natus excepturi non a minima optio doloribus iure? Error obcaecati, sapiente cumque consectetur quibusdam atque nam ipsum temporibus sed neque nisi corrupti culpa rerum nesciunt sunt voluptas voluptatibus voluptatum adipisci quisquam ad illum a? Vero, asperiores atque qui explicabo provident recusandae minus ex nobis consectetur nisi maiores id sint illum reprehenderit ab fuga nam error officia consequatur. Ipsam impedit deserunt quisquam odit nihil?</p>   
         </div>
     </div>
-    <div class="flex justify-between items-center border-t border-pink-800 p-1">
+    <div class="flex justify-between items-center border-t border-pink-800 p-1 px-2">
         <div class="flex items-center">
             <a class="flex items-center mr-2" href="#">
                 <i class="fa-solid text-pink-800  fa-comments mr-1 fa-lg"></i>
