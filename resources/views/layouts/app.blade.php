@@ -19,6 +19,8 @@
         <!-- Scripts -->
         @vite(['resources/css/app.css', 'resources/js/app.js'])
         @livewireStyles
+        @livewireScripts
+        @stack('scripts')
     </head>
     <body class="antialiased pt-[70px] sm:overflow-auto">
         <x-header></x-header>
@@ -30,7 +32,6 @@
                 @livewire('notifications')
             </main>
         </div>
-        @livewireScripts
         <script src="{{ asset('js/dropdown.js') }}"></script>
         @yield('scripts')
     </body>

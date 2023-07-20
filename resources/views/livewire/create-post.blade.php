@@ -1,4 +1,4 @@
-<div>
+<div class="mt-4 p-2">
     <form wire:submit.prevent="submit">
         {{ $this->form }}
      

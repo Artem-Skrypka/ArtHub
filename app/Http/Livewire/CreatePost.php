@@ -10,23 +10,44 @@ class CreatePost extends Component implements Forms\Contracts\HasForms
 {
     use Forms\Concerns\InteractsWithForms;
     
-    public $title;
-    public $markdown;
-    public $rich;
+    public $title = '';
+    public $description = '';
+    public $body = '';
+    public $post_bg = '';
+    public $roles = '';
+    public $tags = '';
+
+    public function mount(): void 
+    {
+        $this->form->fill();
+    } 
 
     protected function getFormSchema(): array 
     {
         return [
-            Forms\Components\TextInput::make('title')->required(),
-            Forms\Components\MarkdownEditor::make('markdown'),
-            Forms\Components\RichEditor::make('rich'),
+            Forms\Components\TextInput::make('title')->label('title (can see all users)')->required(),
+            Forms\Components\TextInput::make('description')->label('description (can see all users)')->required(),
+            Forms\Components\FileUpload::make('post background')->image()->maxSize(10024)->maxFiles(1),
+            Forms\Components\RichEditor::make('body')->label('body (Main post content, only for choosen roles)')->required(),
+            Forms\Components\Select::make('roles')
+                ->label('Roles that can read this post')
+                ->multiple()
+                ->options([
+                    'all' => 'All',
+                    'sakura' => 'Sakura',
+                    'naruto' => 'Naruto',
+                    'sasuke' => 'Sasuke',
+                    'itachi' => 'Itachi',
+                ])
+                ->default('all'),
+            Forms\Components\TagsInput::make('tags')->label('tags (for better search)'),
         ];
     }
 
-    // public function submit()
-    // {
-    //     dd($this->title);
-    // }
+    public function submit()
+    {
+        dd($this->roles);
+    }
 
     public function render()
     {
