@@ -117,16 +117,16 @@
                             @csrf
                             <input class="h-[95%] w-[90%] ml-[1px] focus:outline-none border-none focus:ring-0 active:outline-none visited:outline-none text-pink-800" placeholder="Search..." type="search">
                             <div class="flex justify-end items-center w-[10%] h-full">
-                                <a class="mx-2" href="#">
+                                <a class="mx-2 hover:-translate-y-[2px] transition-all" href="#">
                                     <i class="fa-solid fa-magnifying-glass fa-lg text-pink-800"></i>
                                 </a>
-                                <a class="mx-2" href="#">
+                                <a class="tags-icon mx-2 hover:-translate-y-[2px] transition-all" href="#">
                                     <i class="fa-solid fa-list-check fa-lg text-pink-800"></i>
                                 </a>
                             </div>
 
-                            <div class="hidden items-center flex-wrap p-2 absolute w-[calc(100%+2px)] h-max max-h-[150px] overflow-auto -left-[1px] top-[35px] bg-white border rounded-b-md border-pink-800">
-                                <div class="flex justify-center items-center">
+                            <div class="tags-block hidden items-center flex-wrap p-2 absolute w-[calc(100%+2px)] h-max max-h-[150px] overflow-auto -left-[1px] top-[35px] bg-white border rounded-b-md border-pink-800">
+                                <div class="flex justify-start items-center">
                                     <label class="mr-1" for="anime">Anime</label>
                                     <input class="mr-2" name="anime" type="checkbox">
                                 </div>
