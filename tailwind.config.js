@@ -1,3 +1,6 @@
+import colors from 'tailwindcss/colors'; 
+import forms from '@tailwindcss/forms';
+import typography from '@tailwindcss/typography';
 import defaultTheme from 'tailwindcss/defaultTheme';
 import forms from '@tailwindcss/forms';
 
@@ -8,6 +11,7 @@ export default {
         './storage/framework/views/*.php',
         './resources/views/**/*.blade.php',
         './public/js/**/*.js',
+        './vendor/filament/**/*.blade.php', 
     ],
 
     theme: {
@@ -18,9 +22,16 @@ export default {
             colors: {
                 'darkblue': '#0D1B2A',
                 'post': '#fdf7f79c',
+                danger: colors.rose,
+                primary: colors.blue,
+                success: colors.green,
+                warning: colors.yellow,
             },
         },
     },
 
-    plugins: [forms],
+    plugins: [
+        forms,
+        typography,
+    ],
 };
