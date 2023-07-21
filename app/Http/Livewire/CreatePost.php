@@ -14,6 +14,7 @@ class CreatePost extends Component implements Forms\Contracts\HasForms
     public $description = '';
     public $body = '';
     public $post_bg = '';
+    public $new_roles = '';
     public $roles = '';
     public $tags = '';
 
@@ -29,8 +30,9 @@ class CreatePost extends Component implements Forms\Contracts\HasForms
             Forms\Components\TextInput::make('description')->label('description (can see all users)')->required(),
             Forms\Components\FileUpload::make('post background')->image()->maxSize(10024)->maxFiles(1),
             Forms\Components\RichEditor::make('body')->label('body (Main post content, only for choosen roles)')->required(),
+            Forms\Components\TagsInput::make('new_roles')->label('Roles (if needed)')->placeholder('New role'),
             Forms\Components\Select::make('roles')
-                ->label('Roles that can read this post')
+                ->label('Roles that can read this post (All by default)')
                 ->multiple()
                 ->options([
                     'all' => 'All',
