@@ -2,6 +2,7 @@
 
 use App\Http\Controllers\ProfileController;
 use App\Http\Livewire\CreatePost;
+use App\Http\Livewire\ShowPost;
 use App\Http\Livewire\ShowPosts;
 use Illuminate\Support\Facades\Route;
 
@@ -31,6 +32,7 @@ Route::middleware('auth')->group(function () {
     Route::patch('/profile', [ProfileController::class, 'update'])->name('profile.update');
     Route::delete('/profile', [ProfileController::class, 'destroy'])->name('profile.destroy');
     Route::get('/create-post', CreatePost::class)->name('create-post');
+    Route::get('/show-post', ShowPost::class)->name('show-post');
 });
 
 require __DIR__.'/auth.php';
