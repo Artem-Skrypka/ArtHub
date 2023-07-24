@@ -30,10 +30,9 @@
                     <i class="fa-solid fa-chevron-up origin-center text-pink-800   transition-all user-arrow w-[15px] h-[15px] mt-[4px] ml-[4px]"></i>
                     <div class="user-dropdown-menu hidden absolute top-[40px] sm:max-lg:top-[17px] pt-[30px] mx-2 right-0 flex-col sm:max-lg:w-full w-[calc(100%-1rem)] lg:max-xl:w-[calc(98.5%-1rem)] h-max">
                         <ul class="relative z-30 bg-white border border-t-0 border-pink-800">
-                            <li><a class=" inline-flex text-center justify-center items-center hover:bg-pink-100 w-full text-darkblue" href="#">Profile</a></li>
+                            <li><a class=" inline-flex text-center justify-center items-center hover:bg-pink-100 w-full text-darkblue" href="{{ route('profile') }}">Profile</a></li>
+                            <li><a class=" inline-flex text-center justify-center items-center hover:bg-pink-100 w-full text-darkblue" href="{{ route('show-posts') }}">Posts</a></li>
                             <li><a class=" inline-flex text-center justify-center items-center hover:bg-pink-100 w-full text-darkblue" href="{{ route('create-post') }}">Create Post</a></li>
-                            <li><a class=" inline-flex text-center justify-center items-center hover:bg-pink-100 w-full text-darkblue" href="">List</a></li>
-                            <li><a class=" inline-flex text-center justify-center items-center hover:bg-pink-100 w-full text-darkblue" href="">List</a></li>
                             <li><a class=" inline-flex text-center justify-center items-center hover:bg-pink-100 w-full text-darkblue" href="">Logout</a></li>
                         </ul>
                     </div>
